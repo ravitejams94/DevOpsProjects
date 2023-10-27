@@ -36,7 +36,7 @@ The following resources are being used:-
 1. Choose the Test button and click on **Configure Test Event**. Give it a custom name.
 1. Copy and paste the following JSON value into the 
 > {“firstName”:”Sammy, “lastName”:”Westside”}
-1. Save it . Test it. Under the Test tab you will be able to see the results of the test.
+7. Save it . Test it. Under the Test tab you will be able to see the results of the test.
 > EXECUTION RESULT: SUCCEEDED.
 
 

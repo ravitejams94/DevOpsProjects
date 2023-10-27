@@ -7,12 +7,12 @@ Here lies the code and the logic behind creating this “Hello World” Website.
 - Create interactivity with web app with an API
 - Post the form written data into database
 
- The following resources are being used:- 
-AWS Amplify - Building the frontend app
-AWS API Gateway - Develop the required API’s.
-DynamoDB - NoSQL Database 
-AWS Lambda - Serverless service that lets you run the code. (Python)
-IAM - Policies which will be attached to Lambda functions so that they can perform actions on the DynamoDB.
+The following resources are being used:- 
++ AWS Amplify - Building the frontend app
++ AWS API Gateway - Develop the required API’s.
++ DynamoDB - NoSQL Database 
++ AWS Lambda - Serverless service that lets you run the code. (Python)
++ IAM - Policies which will be attached to Lambda functions so that they can perform actions on the DynamoDB.
 
 **Part 1 - Setting up the front-end using AWS Amplify**
 

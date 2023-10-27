@@ -17,28 +17,27 @@ The following resources are being used:-
 **Part 1 - Setting up the front-end using AWS Amplify**
 
 
-1. Download the source code from the repo here.
-1. Have a look at the index.html file. This is what will be the front end part of the website. Zip only this file. (Index.zip)
-In AWS, head over to AWS Amplify. (You can use any region; Once you pick one make sure you pick the same region for all others; Picking us-east-1)
-Click on Get Started and then under Amplify Hosting click Get Started.
-Select Deploy without Git Provider.
-Click Continue and under AppName give it a name (DemoWebsite) (Can be any name)
-For Environment select Dev, then select Drag n Drop.
-Upload or drag the Index.zip file here. Click on Save and Deploy.
-To verify this click on Domain Management on the left side and copy and paste the URL given. You should be able to see the website here.
+1. Download the source code.
+1. Have a look at the **index.html** file. This is what will be the front end part of the website. Zip only this file. (**Index.zip**)
+1. In AWS, head over to **AWS Amplify**. (You can use any region; Once you pick one make sure you pick the same region for all others; **Picking us-east-1**)
+1. Click on **Get Started** and then under Amplify Hosting click **Get Started**.
+1. Select **Deploy without Git Provider**.
+1. Click Continue and under AppName give it a name (**DemoWeb**) (Can be any name)
+1. For Environment select Dev, then select **Drag n Drop**.
+1. Upload or drag the **Index.zip** file here. Click on **Save and Deploy**.
+1. To verify this click on **Domain Management** on the left side and copy and paste the **URL** given. You should be able to see the website here.
 
 **Part 2 - Creating and modifying Lambda Function**
 
-
-Head over to AWS Lambda. Make sure you are in the same region which you picked earlier.
-Pick Create function. Give it a custom name HelloWorldFunction. Select Python (3.10) (Pick a version) 
-Open lambda_function.py of the source code. Copy and paste the content of that code to Code Source.
-Save the changes and click on Deploy.
-Choose the Test button and click on Configure Test Event. Give it a custom name.
-Copy and paste the following JSON value into the 
-{“firstName”:”Sammy, “lastName”:”Westside”}
-Save it . Test it. Under the Test tab you will be able to see the results of the test.
-EXECUTION RESULT: SUCCEEDED.
+1. Head over to **AWS Lambda**. Make sure you are in the same region which you picked earlier.
+1. Pick **Create function**. Give it a custom name **HelloWorldFunction**. Select Python (3.10) (Pick a version) 
+1. Open **lambda_function.py** of the source code. Copy and paste the content of that code to Code Source.
+1. Save the changes and click on **Deploy**.
+1. Choose the Test button and click on **Configure Test Event**. Give it a custom name.
+1. Copy and paste the following JSON value into the 
+> {“firstName”:”Sammy, “lastName”:”Westside”}
+1. Save it . Test it. Under the Test tab you will be able to see the results of the test.
+> EXECUTION RESULT: SUCCEEDED.
 
 
 **PART 3 - Link LAMBDA to Web App**

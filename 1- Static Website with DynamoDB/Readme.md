@@ -17,8 +17,8 @@ The following resources are being used:-
 **Part 1 - Setting up the front-end using AWS Amplify**
 
 
-Download the source code from the repo here.
-Have a look at the index.html file. This is what will be the front end part of the website. Zip only this file. (Index.zip)
+1. Download the source code from the repo here.
+1. Have a look at the index.html file. This is what will be the front end part of the website. Zip only this file. (Index.zip)
 In AWS, head over to AWS Amplify. (You can use any region; Once you pick one make sure you pick the same region for all others; Picking us-east-1)
 Click on Get Started and then under Amplify Hosting click Get Started.
 Select Deploy without Git Provider.

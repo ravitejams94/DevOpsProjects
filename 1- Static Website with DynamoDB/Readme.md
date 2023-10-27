@@ -42,62 +42,61 @@ The following resources are being used:-
 
 **PART 3 - Link LAMBDA to Web App**
 
-Head to API Gateway Console.
-Choose API Type as REST API and select Build.
-Create New API and give it the name HelloWorldAPI.
-Leave the settings as default and select on Create API.
-Once selected in the left pane click on Resources , API:HelloWorldAPI.
-Ensure the "/" resource is selected.
-From the Actions dropdown menu, select Create Method.
-Select POST from the new dropdown that appears, then select the checkmark.
-Select Lambda Function for the Integration type.
-Enter HelloWorldFunction in the Lambda Function field.
-Choose the blue Save button.
-You will see a message letting you know you are giving the API you are creating permission to call your Lambda function. Choose the OK button.
-With the newly created POST method selected, select Enable CORS from the Action dropdown menu.
-Leave the POST checkbox selected and choose the blue Enable CORS and replace existing CORS headers button. Choose Replace Existing Values.
-In Actions dropdown, Select Deploy API.
-Select New stage and give it a name. WebDemo.
-Choose Deploy. Make sure you note the URL given here. (Invoke URL)
+1. Head to **API Gateway Console**.
+1. Choose API Type as **REST API** and select **Build**.
+1. Create New API and give it the name **HelloWorldAPI**.
+1. Leave the settings as default and select on **Create API**.
+1. Once selected in the left pane click on Resources , **API:HelloWorldAPI**.
+1. Ensure the "/" resource is selected.
+1. From the **Actions** dropdown menu, select **Create Method**.
+1. Select **POST** from the new dropdown that appears, then select the **checkmark**.
+1. Select **Lambda Function** for the Integration type.
+1. Enter **HelloWorldFunction** in the Lambda Function field.
+1. Choose the **Save** button.
+1. You will see a message letting you know you are giving the API you are creating permission to call your Lambda function. Choose the **OK** button.
+1. With the newly created POST method selected, select **Enable CORS** from the Action dropdown menu.
+1. Leave the POST checkbox selected and choose the **Enable CORS** and **replace existing CORS headers** button. Choose Replace Existing Values.
+1. In Actions dropdown, Select **Deploy API**.
+1. Select New stage and give it a name. **WebDemo**.
+1. Choose Deploy. Make sure you note the URL given here. (**Invoke URL**)
 
 **PART 4 - Create DynamoDB Table.**
 
-Head into the Amazon DynamoDB console.
-Make sure you create your table in the same region you picked earlier.
-Choose the Create table button.
-Under Table name, enter HelloWorldDatabase.
-In the Partition key field, enter ID. The partition key is part of the table's primary key.
-Choose the Create table button.
-In the list of tables, select the table name, HelloWorldDatabase.
-In the General information section, show Additional info by selecting the down arrow.
-Copy the ARN name which will be needed later.
+1. Head into the **Amazon DynamoDB console**.
+1. Make sure you create your table in the same region you picked earlier.
+1. Choose the **Create table** button.
+1. Under Table name, enter **HelloWorldDatabase**.
+1. In the Partition key field, enter **ID**. The partition key is part of the table's primary key.
+1. Choose the **Create table** button.
+1. In the list of tables, select the table name, **HelloWorldDatabase**.
+1. In the General information section, show **Additional info** by selecting the down arrow.
+1. Copy the **ARN** name which will be needed later.
 
 Here now we have to give our Lambda function permission to write to this table.
-Head back into AWS Lambda.
-Select the HelloWorldFunction which was created earlier.
-To add the policy (Permissions), head into Configuration and select Permissions.
-In the Execution role box, under Role name, choose the link. A new browser tab will open.
-In the Permissions policies box, open the Add permissions dropdown and select Create inline policy.
-Select the JSON tab.
-Paste the following policy mentioned in source code lambda_policy.json. Take care to replace the YOUR TABLE ARN HERE with your table arn which we copied earlier.
-The policy will allow Lambda function to write into the table. (and more)
-Choose the Review Policy button.
-Next to Name, enter HelloWorldPolicy.
-Choose the Create Policy button.
+
+1. Head back into **AWS Lambda**.
+1. Select the **HelloWorldFunction** which was created earlier.
+1. To add the policy (Permissions), head into **Configuration** and select **Permissions**.
+1. In the **Execution role** box, under **Role** name, choose the link. A new browser tab will open.
+1. In the Permissions policies box, open the **Add permissions** dropdown and select **Create inline policy**.
+1. Select the **JSON tab**.
+1. Paste the following policy mentioned in source code **lambda_policy.json**. Take care to replace the **YOUR TABLE ARN HERE** with your table arn which we copied earlier.
+1. The policy will allow **Lambda function** to write into the table. (and more)
+1. Choose the **Review Policy** button.
+1. Next to Name, enter **HelloWorldPolicy**.
+1. Choose the **Create Policy** button.
 
 Earlier we had a simple Lambda function. Now we modify the function to write into the table. 
-Select the AWS Lambda function created and select the Code tab.
-Copy the code from lambda_function_dynamo.py and paste it here. (Note here in the code the dynamo db table name is hardcoded; you can pass it as environment variable as well)
-Click Deploy.
-Test the same as we had done earlier with different first and last Names. You will see that they have succeeded. Everytime your lambda function executes, the new values will be written to the DynamoDB table.
+
+1. Select the **AWS Lambda function** created and select the Code tab.
+1. Copy the code from **lambda_function_dynamo.py** and paste it here. (Note here in the code the dynamo db table name is hardcoded; you can pass it as environment variable as well)
+1. Click **Deploy**.
+1. Test the same as we had done earlier with different first and last Names. You will see that they have succeeded. Everytime your lambda function executes, the new values will be written to the DynamoDB table.
 
 **PART 5 - RUNNING IT ALL TOGETHER**
 
-Head over to the index.html file which is present in source code.
-Modify the YOUR API URL with the API URL created from Invoke URL.
-Save and re-zip this index.html file and upload the same to AWS Amplify as done earlier.
-Under Domain Choose URL. Run the URL and enter any first and last name and click on Send. This calls the Lambda API which inturn inserts the names into the dynamoDB table and a popup comes up
-Check the dynamoDB table and see if the values have been inserted. 
-
-
-
+1. Head over to the **index.html** file which is present in source code.
+1. Modify the **YOUR API URL** with the API URL created from Invoke URL.
+1. Save and re-zip this **index.html** file and upload the same to AWS Amplify as done earlier.
+1. Under Domain Choose **URL**. Run the URL and enter any first and last name and click on **Send**. This calls the Lambda API which inturn inserts the names into the dynamoDB table and a popup comes up
+1. Check the **dynamoDB table** and see if the values have been inserted.

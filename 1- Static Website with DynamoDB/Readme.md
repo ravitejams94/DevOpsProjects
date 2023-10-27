@@ -72,7 +72,8 @@ The following resources are being used:-
 1. In the General information section, show **Additional info** by selecting the down arrow.
 1. Copy the **ARN** name which will be needed later.
 
-Here now we have to give our Lambda function permission to write to this table.
+
+**PART 5 - Giving Lambda Function Permission with IAM**
 
 1. Head back into **AWS Lambda**.
 1. Select the **HelloWorldFunction** which was created earlier.
@@ -86,14 +87,13 @@ Here now we have to give our Lambda function permission to write to this table.
 1. Next to Name, enter **HelloWorldPolicy**.
 1. Choose the **Create Policy** button.
 
-Earlier we had a simple Lambda function. Now we modify the function to write into the table. 
-
+**PART 6 - Updating Lambda Function to write to the DynamoDB**
 1. Select the **AWS Lambda function** created and select the Code tab.
 1. Copy the code from **lambda_function_dynamo.py** and paste it here. (Note here in the code the dynamo db table name is hardcoded; you can pass it as environment variable as well)
 1. Click **Deploy**.
 1. Test the same as we had done earlier with different first and last Names. You will see that they have succeeded. Everytime your lambda function executes, the new values will be written to the DynamoDB table.
 
-**PART 5 - RUNNING IT ALL TOGETHER**
+**PART 7 - RUNNING IT ALL TOGETHER**
 
 1. Head over to the **index.html** file which is present in source code.
 1. Modify the **YOUR API URL** with the API URL created from Invoke URL.

@@ -7,6 +7,11 @@ Here lies the code and the logic behind creating this “Hello World” Website.
 - Create interactivity with web app with an API
 - Post the form written data into database
 
+### Flowchart
+
+![alt text](https://github.com/ravitejams94/DevOpsProjects/blob/main/1-%20Static%20Website%20with%20DynamoDB/Flowchart.png)
+
+
 The following resources are being used:- 
 + [AWS Amplify](https://aws.amazon.com/amplify/) - Building the frontend app
 + [AWS API Gateway](https://aws.amazon.com/api-gateway/) - Develop the required API’s.

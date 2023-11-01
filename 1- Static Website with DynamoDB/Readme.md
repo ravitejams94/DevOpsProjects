@@ -1,8 +1,11 @@
 
 ## BUILDING A STATIC WEBSITE WITH DYNAMO DB BACKEND
 
+Difficulty : Easy (⭐)
+Time : 1 Hour(⏲️)
+
 Here lies the code and the logic behind creating this “Hello World” Website. Before starting make sure you clone the source code and have an AWS account. This app will:-
-- Create a simple web app
+- Create a simple web app (HTML and JS)
 - Connect the app to a backend which is serverless
 - Create interactivity with web app with an API
 - Post the form written data into database

@@ -35,7 +35,7 @@ function get_list_users {
     local endpoint="repos/${REPO_OWNER}/${REPO_NAME}/collaborators"
     
     # Fetch the list of collaborators on the repository
-    collaborators="$(get_hithub_api_call "$endpoint" | jq -r '.[] | select(.permissions.pull == true) | .login')"
+    collaborators="$(get_github_api_call "$endpoint" | jq -r '.[] | select(.permissions.pull == true) | .login')"
 
     # Display the collaborators
     if [[ -z "$collaborators" ]]; then

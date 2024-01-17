@@ -20,9 +20,9 @@ cd Shell Scripting Projects/Github API
 
 3. Make sure to export your username and github token first.
 
-```export username="<github_username>"```
+`export username="<github_username>"
 
-   export token="<github_token>"```
+`export token="<github_token>"
 
 4. Make the script executable and then run it as shown below.
 

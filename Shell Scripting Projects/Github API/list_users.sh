@@ -10,6 +10,8 @@
 # Pre reqs  : Make sure to export the Username and token of github account 
 ###############################
 
+helper{}
+
 # Github API URL
 API_URL="https://api.github.com" 
 
@@ -44,6 +46,13 @@ function get_list_users {
         echo "Users with read access to ${REPO_OWNER}/${REPO_NAME}:"
         echo "$collaborators"
     fi
+}
+
+function helper {
+    cmd_args=2
+    if [ $# -ne $cmd_args]; then
+        echo "Please execute the script with 2 arguments - Repo_owner and Repo_name"
+
 }
 
 echo "Listing users with read access"

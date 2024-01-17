@@ -18,6 +18,14 @@ git clone https://github.com/ravitejams94/DevOpsProjects
 
 cd Shell Scripting Projects/Github API
 
+3. Make sure to export your username and github token first.
+
+```export username="<github_username>"
+
+```export token="<github_token>"
+
+4. Make the script executable and then run it as shown below.
+
 chmod +x list_users.sh
 
 ./list_users.sh <Repo_owner> <Repo_name>

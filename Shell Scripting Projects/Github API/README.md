@@ -30,5 +30,6 @@ Script here is used to read the repo and list all the users who have access to t
 
 `./list_users.sh <Repo_owner> <Repo_name>`
 
-
+## Example
+- ./list_users.sh ravitejams94 DevOpsProjects
 

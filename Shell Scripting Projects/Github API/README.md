@@ -18,7 +18,7 @@ Script here is used to read the repo and list all the users who have access to t
 
 ```cd "Shell Scripting Projects/Github API"```
 
-3. Make sure to export your username and github token first.
+3. Make sure to export your username and github token first. You can find out how to get your own github token [here](https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 `export username="<github_username>"`
 

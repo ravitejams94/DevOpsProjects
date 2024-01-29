@@ -43,9 +43,9 @@ The Docker container, containing both the application code and its dependencies,
 
 
 ## Prerequisites
-- Operating System: Ensure you are running a Windows version that supports Docker. Docker for Windows requires Windows 10 Pro or Enterprise (64-bit) with Hyper-V support.
-- Hyper-V: Enable Hyper-V on your machine. You can do this through the "Turn Windows features on or off" menu in the Control Panel.
-- Virtualization: Make sure that virtualization is enabled in your machine's BIOS settings.
+- **Operating System**: Ensure you are running a Windows version that supports Docker. Docker for Windows requires Windows 10 Pro or Enterprise (64-bit) with Hyper-V support.
+- **Hyper-V**: Enable Hyper-V on your machine. You can do this through the "Turn Windows features on or off" menu in the Control Panel.
+- **Virtualization**: Make sure that virtualization is enabled in your machine's BIOS settings.
 ## Installation
 
 ### Windows

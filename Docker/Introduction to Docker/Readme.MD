@@ -4,10 +4,17 @@
 - Difficulty : Easy (⭐)
 - Time : 2 Hours(⏲️)
 
-Table of contents
+## Table of Contents
+- [Prerequisites](#Prerequisites)
+- [Introduction](#introduction)
 
 
-Introduction
+## Prerequisites
+- Operating System: Ensure you are running a Windows version that supports Docker. Docker for Windows requires Windows 10 Pro or Enterprise (64-bit) with Hyper-V support.
+- Hyper-V: Enable Hyper-V on your machine. You can do this through the "Turn Windows features on or off" menu in the Control Panel.
+- Virtualization: Make sure that virtualization is enabled in your machine's BIOS settings.
+
+## Introduction
 
 Docker is a powerful tool that facilitates the development and deployment of software applications in a consistent and reproducible manner. It addresses the challenge of varying development environments across different machines, ensuring that applications run seamlessly regardless of the underlying system.
 
@@ -15,38 +22,28 @@ Docker can be employed to encapsulate an application along with its dependencies
 
 Some of the features of docker are:
 
-Development Environment Isolation:
+- Development Environment Isolation:
 Docker enables the isolation of the development environment, ensuring that the application runs consistently across different systems. This is achieved by packaging the application and its dependencies into a Docker container.
 
-Dockerfile:
+- Dockerfile:
 The Dockerfile serves as a blueprint for building a Docker image. It specifies the base image, sets up the necessary environment, copies the application code, and configures any required settings. This file essentially defines the steps to create a reproducible and portable container.
 
-GitHub Repository Integration:
+- GitHub Repository Integration:
 The Docker configuration, including the Dockerfile, can be stored in the same GitHub repository as the application code. This ensures version control and a streamlined collaboration process.
 
-Continuous Integration (CI):
+- Continuous Integration (CI):
 Integration with CI/CD (Continuous Integration/Continuous Deployment) pipelines is a common practice. CI tools, such as Jenkins or GitHub Actions, can be configured to automatically build and test the Docker container whenever changes are pushed to the GitHub repository.
 
-Docker Image Registry:
+- Docker Image Registry:
 The built Docker image can be pushed to a container registry (like Docker Hub) or a private repository. This allows for easy distribution of the containerized application to other developers or deployment environments.
 
-Versioning and Collaboration:
+- Versioning and Collaboration:
 Docker images can be versioned, providing a structured approach to collaboration. Developers can pull specific versions of the Docker image, ensuring consistency in testing and deployment across different stages of the development lifecycle.
 
-Deployment:
+- Deployment:
 The Docker container, containing both the application code and its dependencies, can be deployed on any machine with Docker support. This streamlines the deployment process, reducing the chances of environment-related issues.
 
-Prerequisites:
-Operating System:
-Ensure you are running a Windows version that supports Docker. Docker for Windows requires Windows 10 Pro or Enterprise (64-bit) with Hyper-V support.
-
-Hyper-V:
-Enable Hyper-V on your machine. You can do this through the "Turn Windows features on or off" menu in the Control Panel.
-
-Virtualization:
-Make sure that virtualization is enabled in your machine's BIOS settings.
-
-Installation Steps:
+## Installation
 Download Docker Desktop:
 Go to the Docker Desktop for Windows page and download the Docker Desktop installer.
 

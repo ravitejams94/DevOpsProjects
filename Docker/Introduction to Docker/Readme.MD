@@ -51,7 +51,7 @@ The Docker container, containing both the application code and its dependencies,
 ### Windows
 Official installation instructions can be found [here](https://docs.docker.com/engine/install/)
 
-1. Download Docker Desktop:
+1. **Download Docker Desktop**:
 Go to the Docker Desktop for Windows page and download the Docker Desktop installer.
 
 2. **Install Docker Desktop**:
@@ -123,6 +123,5 @@ docker rm my-node-container
 1. Pull and setup a docker container of the image 'node'.
 2. Check if the container was sucessfully created or not.
 3. Run a interactive node terminal. 
-4. Validate if the node running inside the container is same as the node you have 
-    or not.
+4. Check the version of NODE running inside the container.
 5. Delete all the created containers.

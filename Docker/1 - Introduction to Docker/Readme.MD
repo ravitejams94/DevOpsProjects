@@ -82,10 +82,10 @@ Congratulations! You have successfully set up Docker on your Windows machine.
 1. Pulling and Setting Up a Basic Container (e.g., Node):
 
 ```
-#Pull the Node.js image from Docker Hub
+# Pull the Node.js image from Docker Hub
 docker pull node
 
-#Create and start a container named "my-node-container" from the Node.js image
+# Create and start a container named "my-node-container" from the Node.js image
 docker run --name my-node-container -d node
 ```
 2. Checking if the Container is Running:

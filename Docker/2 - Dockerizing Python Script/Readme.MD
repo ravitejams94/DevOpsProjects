@@ -78,6 +78,19 @@ Now, you have successfully built and run a Docker container for a Python "Hello,
 
 For the task below copy the following script and save it in a file as 'app.py'
 
+```
+from random import randint
+
+min_number = int(input('Please enter the min number: '))
+max_number = int(input('Please enter the max number: '))
+
+if (max_number < min_number): 
+  print('Invalid input - shutting down...')
+else:
+  rnd_number = randint(min_number, max_number)
+  print(rnd_number)
+```
+
 1. Using what we learned from Task 2 write a dockerfile with 4 commands
     FROM
     WORKDIR

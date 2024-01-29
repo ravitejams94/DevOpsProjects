@@ -1,6 +1,6 @@
 This contains all the tutorials and Hands on Projects associated with Docker
 
-Contents:
+## Contents:
 
 1. Introduction to Docker
-2. 
+2. Dockerizin Python Script

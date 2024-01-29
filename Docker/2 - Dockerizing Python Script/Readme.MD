@@ -32,7 +32,7 @@ print("hello world")
 
 A Dockerfile is a text-based configuration file that defines the steps and instructions for building a Docker image. It specifies the base image, sets the working directory, copies application code, and configures runtime settings. Each instruction in the Dockerfile contributes to creating a lightweight, standalone, and executable package, encapsulating the application and its dependencies. Dockerfiles enable the reproducible creation of Docker images, providing a consistent environment for deploying applications across various systems. 
 
-Create a file named Dockerfile in the same directory with the following content:
+Create a file named 'Dockerfile' in the same directory with the following content:
 ```
 # Use an official Python runtime as a base image
 FROM python:3.9

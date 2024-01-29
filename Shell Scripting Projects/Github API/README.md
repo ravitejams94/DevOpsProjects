@@ -10,6 +10,26 @@ Script here is used to read the repo and list all the users who have access to t
 - EC2 instance (Key-Pair Setup optional)
 - Github Repo (Must have read access or your personal repo would work)
 
-## Setup
+## Usage
 1. Login to your AWS account and setup an EC2 instance(Ubuntu machine) with your key pair if setup, or else you can connect directly via AWS.
-2. 
+2. Once connected to your instance, first clone the following repository.
+
+```git clone https://github.com/ravitejams94/DevOpsProjects```
+
+```cd "Shell Scripting Projects/Github API"```
+
+3. Make sure to export your username and github token first. You can find out how to get your own github token [here](https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+
+`export username="<github_username>"`
+
+`export token="<github_token>"`
+
+4. Make the script executable and then run it as shown below.
+
+`chmod +x list_users.sh`
+
+`./list_users.sh <Repo_owner> <Repo_name>`
+
+## Example
+- ./list_users.sh ravitejams94 DevOpsProjects
+

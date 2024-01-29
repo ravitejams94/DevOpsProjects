@@ -93,7 +93,7 @@ else:
   print(rnd_number)
 ```
 
-1. Using what we learned from Task 2 write a dockerfile with 4 commands
+1. Using what we learned, write a dockerfile with 4 commands
     FROM
     WORKDIR
     COPY

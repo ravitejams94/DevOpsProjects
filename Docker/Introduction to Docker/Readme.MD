@@ -7,6 +7,8 @@
 ## Table of Contents
 - [Prerequisites](#Prerequisites)
 - [Introduction](#introduction)
+- [Installation](#installation)
+- [Commands](#commands)
 
 
 ## Prerequisites
@@ -74,40 +76,42 @@ Congratulations! You have successfully set up Docker on your Windows machine.
 
 1. Pulling and Setting Up a Basic Container (e.g., Node):
 
-# Pull the Node.js image from Docker Hub
+```
+#Pull the Node.js image from Docker Hub
 docker pull node
 
-# Create and start a container named "my-node-container" from the Node.js image
+#Create and start a container named "my-node-container" from the Node.js image
 docker run --name my-node-container -d node
-
+```
 2. Checking if the Container is Running:
 
+```
 # List all running containers
 docker ps
 
 # To see all containers, including those not currently running, add the `-a` option
 docker ps -a
+```
 
 3. Running Interactive Node Terminal in the Container:
 
+```
 # Start an interactive terminal session inside the running container
 docker exec -it my-node-container bash
 
 # Now you are inside the container, and you can run Node.js commands or check its version
-
-4. Check the Version of Node.js Running in the Container:
-
-# Inside the container, run the following command to check Node.js version
 node --version
+```
 
-5. Delete the Created Container:
+4. Delete the Created Container:
 
+```
 # Stop the running container
 docker stop my-node-container
 
 # Remove the container
 docker rm my-node-container
-
+```
 
 ## Tasks
 

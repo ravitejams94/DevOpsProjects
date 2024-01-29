@@ -9,7 +9,7 @@
 - [Prerequisites](#Prerequisites)
 - [Installation](#installation)
 - [Commands](#commands)
-- [Tasks](#tasks)
+- [Challenges](#challenges)
 
 
 ## Introduction
@@ -118,7 +118,9 @@ docker stop my-node-container
 docker rm my-node-container
 ```
 
-## Tasks
+## Challenges
+
+Complete the following tasks for some hands on practice.
 
 1. Pull and setup a docker container of the image 'node'.
 2. Check if the container was sucessfully created or not.

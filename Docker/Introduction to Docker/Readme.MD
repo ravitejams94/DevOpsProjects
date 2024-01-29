@@ -5,16 +5,12 @@
 - Time : 2 Hours(⏲️)
 
 ## Table of Contents
-- [Prerequisites](#Prerequisites)
 - [Introduction](#introduction)
+- [Prerequisites](#Prerequisites)
 - [Installation](#installation)
 - [Commands](#commands)
+- [Tasks](#tasks)
 
-
-## Prerequisites
-- Operating System: Ensure you are running a Windows version that supports Docker. Docker for Windows requires Windows 10 Pro or Enterprise (64-bit) with Hyper-V support.
-- Hyper-V: Enable Hyper-V on your machine. You can do this through the "Turn Windows features on or off" menu in the Control Panel.
-- Virtualization: Make sure that virtualization is enabled in your machine's BIOS settings.
 
 ## Introduction
 
@@ -45,7 +41,16 @@ Docker images can be versioned, providing a structured approach to collaboration
 - **Deployment**:
 The Docker container, containing both the application code and its dependencies, can be deployed on any machine with Docker support. This streamlines the deployment process, reducing the chances of environment-related issues.
 
+
+## Prerequisites
+- Operating System: Ensure you are running a Windows version that supports Docker. Docker for Windows requires Windows 10 Pro or Enterprise (64-bit) with Hyper-V support.
+- Hyper-V: Enable Hyper-V on your machine. You can do this through the "Turn Windows features on or off" menu in the Control Panel.
+- Virtualization: Make sure that virtualization is enabled in your machine's BIOS settings.
 ## Installation
+
+### Windows
+Official installation instructions can be found [here](https://docs.docker.com/engine/install/)
+
 1. Download Docker Desktop:
 Go to the Docker Desktop for Windows page and download the Docker Desktop installer.
 
@@ -60,9 +65,9 @@ After installation is complete, launch Docker Desktop from the Start menu.
 
 5. **Check Docker Version**:
 Open a Command Prompt or PowerShell window and type the following command to verify that Docker is installed successfully:
-
+```
 docker --version
-
+```
 6. **Run a Test Container**:
 Open a Command Prompt or PowerShell window and run a simple test container to ensure everything is working. For example, run the following command to pull and run the "hello-world" container:
 

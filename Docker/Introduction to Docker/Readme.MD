@@ -22,46 +22,46 @@ Docker can be employed to encapsulate an application along with its dependencies
 
 Some of the features of docker are:
 
-- Development Environment Isolation:
+- **Development Environment Isolation**:
 Docker enables the isolation of the development environment, ensuring that the application runs consistently across different systems. This is achieved by packaging the application and its dependencies into a Docker container.
 
-- Dockerfile:
+- **Dockerfile**:
 The Dockerfile serves as a blueprint for building a Docker image. It specifies the base image, sets up the necessary environment, copies the application code, and configures any required settings. This file essentially defines the steps to create a reproducible and portable container.
 
-- GitHub Repository Integration:
+- **GitHub Repository Integration**:
 The Docker configuration, including the Dockerfile, can be stored in the same GitHub repository as the application code. This ensures version control and a streamlined collaboration process.
 
-- Continuous Integration (CI):
+- **Continuous Integration (CI)**:
 Integration with CI/CD (Continuous Integration/Continuous Deployment) pipelines is a common practice. CI tools, such as Jenkins or GitHub Actions, can be configured to automatically build and test the Docker container whenever changes are pushed to the GitHub repository.
 
-- Docker Image Registry:
+- **Docker Image Registry**:
 The built Docker image can be pushed to a container registry (like Docker Hub) or a private repository. This allows for easy distribution of the containerized application to other developers or deployment environments.
 
-- Versioning and Collaboration:
+- **Versioning and Collaboration**:
 Docker images can be versioned, providing a structured approach to collaboration. Developers can pull specific versions of the Docker image, ensuring consistency in testing and deployment across different stages of the development lifecycle.
 
-- Deployment:
+- **Deployment**:
 The Docker container, containing both the application code and its dependencies, can be deployed on any machine with Docker support. This streamlines the deployment process, reducing the chances of environment-related issues.
 
 ## Installation
-Download Docker Desktop:
+1. Download Docker Desktop:
 Go to the Docker Desktop for Windows page and download the Docker Desktop installer.
 
-Install Docker Desktop:
+2. **Install Docker Desktop**:
 Run the installer you downloaded in the previous step. Follow the on-screen instructions to install Docker Desktop on your Windows machine. This may require a system restart.
 
-Enable Hyper-V and Containers Windows Features:
+3. **Enable Hyper-V and Containers Windows Features**:
 Docker Desktop will prompt you to enable Hyper-V and Containers features during the installation. Allow Docker Desktop to make the necessary changes to your system.
 
-Run Docker Desktop:
+4. **Run Docker Desktop**:
 After installation is complete, launch Docker Desktop from the Start menu.
 
-Check Docker Version:
+5. **Check Docker Version**:
 Open a Command Prompt or PowerShell window and type the following command to verify that Docker is installed successfully:
 
 docker --version
 
-Run a Test Container:
+6. **Run a Test Container**:
 Open a Command Prompt or PowerShell window and run a simple test container to ensure everything is working. For example, run the following command to pull and run the "hello-world" container:
 
 docker run hello-world
@@ -70,7 +70,7 @@ Docker will download the "hello-world" image and run a container, and you should
 
 Congratulations! You have successfully set up Docker on your Windows machine.
 
-Basic Commands
+## Basic Commands
 
 1. Pulling and Setting Up a Basic Container (e.g., Node):
 
@@ -109,7 +109,7 @@ docker stop my-node-container
 docker rm my-node-container
 
 
-Tasks
+## Tasks
 
 1. Pull and setup a docker container of the image 'node'.
 2. Check if the container was sucessfully created or not.

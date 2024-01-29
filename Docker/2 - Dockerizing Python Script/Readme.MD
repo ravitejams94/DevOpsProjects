@@ -7,7 +7,7 @@
 - [Prerequisites](#prerequisites)
 - [Introduction](#introduction)
 - [Commands](#commands)
-- [Challenges for you](#Challenges for you)
+- [Challenges](#Challenges)
 
 ## Prerequisites
 Make sure you have docker installed and setup and comeplete the tasks of **Part 1 - Introduction to Docker** [here](https://github.com/ravitejams94/DevOpsProjects/tree/main/Docker/1%20-%20Introduction%20to%20Docker)
@@ -74,7 +74,7 @@ Now, you have successfully built and run a Docker container for a Python "Hello,
 
 
 
-## Challenges for you
+## Challenges
 
 Complete the following tasks for hands on practice.
 

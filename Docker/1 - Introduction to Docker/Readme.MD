@@ -70,9 +70,9 @@ docker --version
 ```
 6. **Run a Test Container**:
 Open a Command Prompt or PowerShell window and run a simple test container to ensure everything is working. For example, run the following command to pull and run the "hello-world" container:
-
+```
 docker run hello-world
-
+```
 Docker will download the "hello-world" image and run a container, and you should see a message indicating that your Docker installation is working correctly.
 
 Congratulations! You have successfully set up Docker on your Windows machine.

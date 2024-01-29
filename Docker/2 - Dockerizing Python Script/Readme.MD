@@ -7,7 +7,7 @@
 - [Prerequisites](#prerequisites)
 - [Introduction](#introduction)
 - [Commands](#commands)
-- [Tasks](#tasks)
+- [Challenges for you](#Challenges for you)
 
 ## Prerequisites
 Make sure you have docker installed and setup and comeplete the tasks of **Part 1 - Introduction to Docker** [here](https://github.com/ravitejams94/DevOpsProjects/tree/main/Docker/1%20-%20Introduction%20to%20Docker)
@@ -74,7 +74,9 @@ Now, you have successfully built and run a Docker container for a Python "Hello,
 
 
 
-## Tasks
+## Challenges for you
+
+Complete the following tasks for hands on practice.
 
 For the task below copy the following script and save it in a file as 'app.py'
 

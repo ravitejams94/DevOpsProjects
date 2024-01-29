@@ -54,7 +54,7 @@ CMD ["python", "app.py"]
 
 For a better understanding of all the keywords in Dockerfile, check the official documentation [here](https://docs.docker.com/engine/reference/builder/)
 
-3. ** Build Docker Image**:
+3. **Build Docker Image**:
 
 Open a terminal in the directory containing the Dockerfile and run the following command to build the Docker image:
 

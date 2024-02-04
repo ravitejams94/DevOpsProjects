@@ -7,6 +7,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#Prerequisites)
+- [Flowchart](#flowchart)
 - [Walkthrough](#walkthrough)
 - [Challenges](#challenges)
   
@@ -24,9 +25,18 @@ We will setup the following
 - Basic AWS knowledge
 - Beginner Python code understanding
   
-## Walkthrough
+## Flowchart
+1. User modifies the Emails.xlsx file adding/deleting names-email pairs.
+2. File is uploaded to S3 bucket.
+3. The file upload triggers the lambda function
+4. Lambda function checks whether the email is present or not.
+5. The DynamoDB table retuns the result of email check.
+6. Lambda function then triggers the email SES service.
+7. AWS SES then sends the mail to the verified users.
+
 ![Flowchart](https://github.com/ravitejams94/DevOpsProjects/blob/main/2%20-%20Sending%20Mass%20Email%20with%20S3%2C%20DynamoDB%2C%20Lambda%20and%20IAM/Mass%20Email.png)
 
+## Walkthrough
 ### Setting up the S3 bucket.
 1. Open up your Amazon account and login.
 2. Go to S3 and create a custom bucket with any name. Ex: "sendingmailbucketlist"

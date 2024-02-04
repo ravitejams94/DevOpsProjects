@@ -191,8 +191,63 @@ Replace the following values:
 
 7. Once copied click on **Deploy**
 8. Since pandas is being used here, lambda functions needs to add this as a layer. In the same page where this code was copied done, scroll down till you find **Layers**. Click on **Add a Layer**
-9. Choose **AWS Layers** and select **AWSSDKLayers**
-10. 
+9. Choose **AWS Layers** and select **AWSSDKLayers**. Click on Add.
+10. Trigger has to be added, so in the main page click on **Add Trigger**.
+11. Select the Source as **S3**. Select the given bucket name, under the Event type select only the **PUT** option as the lambda function should trigger when something is uploaded into the bucket. For suffix select as, **.xlsx** which is the extension of our file "Emails.xlsx". Also, check the box of the "Recursive Invocation". This states that same S3 bucket is not used for both input and output.
+12. Click on **Add**. Now Trigger now has been set so whenever email is added to the file and the file "Emails.xlsx" is uploaded to the bucket, the lambda function will trigger.
 
+Here after adding once we click on **Test**, some errors will pop up. This is mainly due to lack of permissions which we will add in the next step.
 
+### Adding the IAM Permissions
+1. Once you have finished writing the Lambda code, permissions need to be added to it. Near the code source click on **Configuration**.
+2. Click on **Permissions** and click the Role name. This will open up a new tab which has the policy role attached to the lambda function. 
+3. Here 3 permissions are to be added:-
 
+  - Under Permissions, click on **Add Permissions** and select **Attach Policies**. The first policy to attach here is the **AmazonSESFullAccess**. This allows the lambda function to access the AWS SES so that it can send email to the mail addresses in the xlsx.
+  - The second policy to attach is Inline policy. Under Permissions, click on **Add Permissions** and select **Create Inline Policy**. Click on **JSON** and copy the following code below.
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"s3:GetObject",
+				"s3:ListBucket"
+			],
+			"Resource": [
+				"arn:aws:s3:::BUCKET_NAME",
+				"arn:aws:s3:::BUCKET_NAME/*"
+			]
+		}
+	]
+}
+```
+BUCKET_NAME - Replace it with the actual bucket name. This policy is used to access the bucket and the objects inside the bucket. This is a bucket specific policy.
+  - The third and final policy to attach is the DynamoDB read and write policy. Another Inline policy as above in the JSON copy the following code.
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"dynamodb:PutItem",
+				"dynamodb:GetItem"
+			],
+			"Resource": "arn:aws:dynamodb:AWS_REGION:AWS_ACCOUNT_ID:table/DYNAMO_DB_NAME"
+		}
+	]
+}
+```
+Replace the following values.
+AWS_REGION - The region of your AWS. 
+ACCOUNT_ID - Account ID. Found in the drop down at the top right at account name.
+DYNAMO_DB_NAME - The name of the Dynamo DB table created.
+
+4. Once these policies have been attached, your lambda function is ready to go. Upload the file "Emails.xlsx" and see how the lambda function triggers.
+
+## Challenges
+
+1. To make this more interesting, how would we deploy this cross region?
+2. Is there a workaround to not verifying each and every single mail? If there are 1000's then it can be physically daunting task to verify all the emails.

@@ -189,8 +189,10 @@ Replace the following values:
 - BUCKET_NAME - Custom name of the bucket (sendingmailbucketlist)
 - SENDERS_EMAIL - Senders email validated by AWS SES
 
-7. Once copied click on **Deploy""
-8. Since pandas is being used here, lambda functions needs to add this as a layer. In the same page where this code was copied done
+7. Once copied click on **Deploy**
+8. Since pandas is being used here, lambda functions needs to add this as a layer. In the same page where this code was copied done, scroll down till you find **Layers**. Click on **Add a Layer**
+9. Choose **AWS Layers** and select **AWSSDKLayers**
+10. 
 
 
 

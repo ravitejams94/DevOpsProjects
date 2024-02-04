@@ -25,6 +25,7 @@ We will setup the following
 - Beginner Python code understanding
   
 ## Walkthrough
+![Flowchart](https://github.com/ravitejams94/DevOpsProjects/blob/main/2%20-%20Sending%20Mass%20Email%20with%20S3%2C%20DynamoDB%2C%20Lambda%20and%20IAM/Mass%20Email.png)
 
 ### Setting up the S3 bucket.
 1. Open up your Amazon account and login.

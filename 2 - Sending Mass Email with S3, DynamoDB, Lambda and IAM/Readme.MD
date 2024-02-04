@@ -7,8 +7,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#Prerequisites)
-- [Installation](#installation)
-- [Commands](#commands)
+- [Walkthrough](#walkthrough)
 - [Challenges](#challenges)
   
 ## Introduction

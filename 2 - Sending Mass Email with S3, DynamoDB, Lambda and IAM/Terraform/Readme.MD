@@ -22,7 +22,7 @@ As per the previous setup we had created the following and now we will automate 
 - AWS account
 - Basic AWS knowledge
 - Beginner Python code understanding
-- Before running this make sure you export your AWS access ID and secret key. For more details see (here)[https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html]
+- Before running this make sure you export your AWS access ID and secret key. For more details see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
 - Terraform basic knowledge. 
   
 ## Flowchart

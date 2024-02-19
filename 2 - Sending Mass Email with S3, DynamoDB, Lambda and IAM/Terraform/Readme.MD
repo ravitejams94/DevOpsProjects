@@ -8,7 +8,7 @@
 - [Introduction](#introduction)
 - [Prerequisites](#Prerequisites)
 - [Walkthrough](#walkthrough)
-- [Challenges](#challenges)
+- [Deployment](#deployment)
   
 ## Introduction
   
@@ -22,6 +22,8 @@ As per the previous setup we had created the following and now we will automate 
 - AWS account
 - Basic AWS knowledge
 - Beginner Python code understanding
+- Before running this make sure you export your AWS access ID and secret key. For more details see (here)[https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html]
+- Terraform basic knowledge. 
   
 ## Flowchart
 ![Flowchart](https://github.com/ravitejams94/DevOpsProjects/blob/main/2%20-%20Sending%20Mass%20Email%20with%20S3%2C%20DynamoDB%2C%20Lambda%20and%20IAM/Mass%20Email.png)
@@ -203,3 +205,10 @@ resource "aws_s3_bucket_notification" "my_bucket_notification" {
 }
 ```
 
+## Deployment
+1. On the command line after exporting the AWS access ID and Secret Key, Run **Terraform init**.
+2. Next , **Terraform plan**
+3. This plan shows you the complete infra being built.
+4. Finally run **Terraform apply**.
+5. Check out the resources created and upload the file "Emails.xlsx" and see the email being sent. 
+6. Finally after your done make sure to run **Terraform destroy** to destroy all infra so that your not billed.

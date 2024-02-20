@@ -19,11 +19,11 @@ As per the previous setup we had created the following and now we will automate 
 - Setting up IAM policies and permissions
   
 ## Prerequisites
-- AWS account
-- Basic AWS knowledge
+- AWS account 
+- Basic AWS knowledge with AWS cli setup.
 - Beginner Python code understanding
 - Before running this make sure you export your AWS access ID and secret key. For more details see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
-- Terraform basic knowledge. 
+- Terraform basic knowledge and terraform installed locally.
   
 ## Flowchart
 ![Flowchart](https://github.com/ravitejams94/DevOpsProjects/blob/main/2%20-%20Sending%20Mass%20Email%20with%20S3%2C%20DynamoDB%2C%20Lambda%20and%20IAM/Mass%20Email.png)
